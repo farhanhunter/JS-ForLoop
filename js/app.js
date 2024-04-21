@@ -20,10 +20,24 @@
 //   console.log(index, newGame);
 // }
 
-const choice = "abcd";
-for (let index1 = 1; index1 <= 10; index1++) {
-  console.log(`${index1} Soal pilihan ganda nomor${index1}`);
-  for (let index2 = 0; index2 < choice.length; index2++) {
-    console.log(` ${choice[index2]}. Pilihan jawabab`);
+// const choice = "abcd";
+// for (let index1 = 1; index1 <= 10; index1++) {
+//   console.log(`${index1} Soal pilihan ganda nomor${index1}`);
+//   for (let index2 = 0; index2 < choice.length; index2++) {
+//     console.log(` ${choice[index2]}. Pilihan jawabab`);
+//   }
+// }
+
+const monsterRow = [
+  ["Godzila", "King Kong", "M.U.T.O.s"],
+  ["Skullcrawlers", "Mother Longlegs", "Leafwings"],
+  ["Mothra", "King Ghidorah", "Rodan"],
+];
+
+for (let i = 0; i < monsterRow.length; i++) {
+  const nameRow = monsterRow[i];
+  console.log(`Monster Row # ${i + 1}`);
+  for (let j = 0; j < nameRow.length; j++) {
+    console.log(`   ${nameRow[j]}`);
   }
 }
