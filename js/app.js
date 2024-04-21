@@ -8,14 +8,22 @@
 //   console.log(i);
 // }
 
-const game = [
-  "Valorant",
-  "Counter Strike2",
-  "Apex Legends",
-  "GTA V",
-  "EA SPORTS 2024",
-];
-for (let index = 0; index < game.length; index++) {
-  const newGame = game[index];
-  console.log(index, newGame);
+// const game = [
+//   "Valorant",
+//   "Counter Strike2",
+//   "Apex Legends",
+//   "GTA V",
+//   "EA SPORTS 2024",
+// ];
+// for (let index = 0; index < game.length; index++) {
+//   const newGame = game[index];
+//   console.log(index, newGame);
+// }
+
+const choice = "abcd";
+for (let index1 = 1; index1 <= 10; index1++) {
+  console.log(`${index1} Soal pilihan ganda nomor${index1}`);
+  for (let index2 = 0; index2 < choice.length; index2++) {
+    console.log(` ${choice[index2]}. Pilihan jawabab`);
+  }
 }
